@@ -20,6 +20,8 @@
     },
     toJSON: function(){
       var json = Base.Model.prototype.toJSON.call(this);
+      json.x = this.get("x") + 53;
+      json.y = this.get("y") + 152;
       json.w = this.get("w");
       json.h = this.get("h");
       return json;
